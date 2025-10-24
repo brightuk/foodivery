@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Foodivery" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- Example: -->
+        <!-- <item name="colorPrimary">@color/your_primary</item> -->
+    </style>
+    <style name="Theme.Foodivery" parent="Base.Theme.Foodivery" />
+</resources>

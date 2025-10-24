@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Foodivery" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+        <!-- Example: -->
+         <item name="colorPrimary">@color/black</item>
+    </style>
+    <style name="Theme.Foodivery" parent="Base.Theme.Foodivery" />
+</resources>

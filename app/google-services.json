@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "498238470881",
+    "project_id": "foodivery-9c695",
+    "storage_bucket": "foodivery-9c695.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498238470881:android:acaff4dd2bf551d13cd5a0",
+        "android_client_info": {
+          "package_name": "com.test.foodivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLWViAG4oCOZ9aBWMV6gZj7xFZ0E9xW84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498238470881:android:278f9365818bf1ad3cd5a0",
+        "android_client_info": {
+          "package_name": "com.test.foodiverypartner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLWViAG4oCOZ9aBWMV6gZj7xFZ0E9xW84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

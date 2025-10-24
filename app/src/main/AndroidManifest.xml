@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.test.foodivery">
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="19" -->
+    <!-- android:targetSdkVersion="35" -->
+    <!-- tools:overrideLibrary="com.razorpay" /> -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_foodivery"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_foodivery_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Foodivery"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".Activity.ProfileUserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HistoryViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PaymentResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CcavenueWebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.BrandPage"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddressFindActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtmXKSxz-tBk6zZEEC16_vGEXTNkSEbAg" />
+
+        <activity
+            android:name=".Activity.GoogleAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LogOutActivity"
+            android:windowSoftInputMode="adjustResize"
+
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ComfirmOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddressShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OfferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OrderActivity"
+            android:exported="false" />
+        
+        <activity
+            android:name=".Activity.ProductViewActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LogInActivity"
+            android:exported="true"
+
+            />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>

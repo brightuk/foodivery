@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.AddressActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- Map Fragment, fills available space -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="40dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#12000000">
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/cust_Name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundoutline"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:textColorHint="#908D8D"
+            android:hint="Name"
+            android:padding="10dp"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/cust_PhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundoutline"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:hint="Mobile No"
+            android:textColorHint="#908D8D"
+            android:inputType="number"
+            android:padding="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/cust_address"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/backgroundoutline"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:textColorHint="#908D8D"
+            android:hint="Address"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="30dp"/>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/address_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Continue"
+            android:textColor="@color/white"
+
+            android:background="@drawable/backgroundoutline"
+            android:backgroundTint="#BA1B50A4"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:textColor="@android:color/black"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="Home" />
+    <item
+        android:id="@+id/ic_history"
+        android:icon="@drawable/shopping_bag"
+        android:textColor="@android:color/black"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="Search" />
+    <item
+        android:id="@+id/ic_cart"
+        android:icon="@drawable/ic_trolley"
+        android:textColor="@android:color/black"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="Cart" />
+    <item
+        android:id="@+id/ic_productView"
+        android:icon="@drawable/ic_box"
+        android:textColor="@android:color/black"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="Products" />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_profile"
+        android:textColor="@android:color/black"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="Profile" />
+</menu>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.LogInActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+
+           >
+           <ImageView
+               android:layout_width="300dp"
+               android:layout_height="70dp"
+               android:src="@drawable/foodivery"
+               android:layout_gravity="center"
+               android:textAlignment="center"
+               android:layout_marginTop="150dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="300dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:textSize="25dp"
+                   android:textAlignment="center"
+                   android:textStyle="bold"
+                   android:textFontWeight="@integer/material_motion_duration_long_2"
+                   android:textColor="@android:color/black"
+                   android:fontFamily="@font/itim_regular"
+                   android:layout_marginTop="120dp"
+                   android:text="India,s #1 Food Delivery and Dining App"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+
+                   android:layout_marginTop="20dp">
+                   <View
+                       android:layout_width="130dp"
+                       android:layout_height="1dp"
+                       android:background="#76000000"
+                       android:layout_marginTop="10dp"
+                       android:layout_weight="1"
+
+                       android:layout_marginLeft="10dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Log in or sign up"
+                       android:layout_marginLeft="10dp"
+
+                       android:gravity="center"
+                       android:layout_gravity="center"
+                       android:layout_marginRight="10dp"
+                       android:textColor="@color/black" />
+                   <View
+                       android:layout_width="130dp"
+                       android:layout_height="1dp"
+                       android:background="#76000000"
+                       android:layout_weight="1"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginRight="10dp"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:background="@android:color/white"
+                   android:layout_marginTop="20dp">
+
+
+                   <LinearLayout
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:orientation="horizontal"
+
+                       android:gravity="center"
+                       android:background="@drawable/backgroundoutline"
+
+                       >
+
+                       <!--                    <ImageView-->
+                       <!--                        android:layout_width="30dp"-->
+                       <!--                        android:layout_height="40dp"-->
+                       <!--                        android:padding="1dp"-->
+                       <!--                        android:src="@drawable/flage"/>-->
+
+                       <!--                    <ImageView-->
+                       <!--                        android:layout_width="30dp"-->
+                       <!--                        android:layout_height="40dp"-->
+                       <!--                        android:gravity="center"-->
+                       <!--                        android:src="@drawable/baseline_arrow_drop_down_24"-->
+
+
+                       <!--                        />-->
+
+                       <!--                    <com.hbb20.CountryCodePicker-->
+                       <!--                        android:id="@+id/countryCodeHolder"-->
+                       <!--                        android:layout_width="wrap_content"-->
+                       <!--                        android:layout_height="wrap_content"-->
+                       <!--                        app:ccp_showFullName="false"-->
+                       <!--                        app:ccp_showPhoneCode="true"-->
+                       <!--                        app:ccp_showNameCode="false"-->
+                       <!--                        app:ccp_showFlag="true"-->
+                       <!--                        app:ccp_autoFormatNumber="true"-->
+                       <!--                        app:ccp_showArrow="true"-->
+                       <!--                        app:ccp_textSize="16sp"-->
+                       <!--                        app:ccp_arrowSize="16sp"/>-->
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="+91"
+                           android:textSize="20dp"
+                           android:textColor="@android:color/black"/>
+                   </LinearLayout>
+                   <EditText
+                       android:id="@+id/phoneNum"
+                       android:layout_width="250dp"
+                       android:layout_height="40dp"
+                       android:layout_marginStart="10dp"
+                       android:background="@drawable/backgroundoutline"
+                       android:textColor="@android:color/black"
+                       android:maxLength="10"
+
+                       android:hint="enter phone number"
+
+                       android:textColorHint="@android:color/black"
+                       android:inputType="number"
+                       android:paddingLeft="20dp"
+
+
+                       tools:ignore="TextFields" />
+
+
+
+               </LinearLayout>
+
+
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/logbtn"
+                   android:layout_width="362dp"
+                   android:layout_height="38dp"
+                   android:background="@drawable/backgroundoutline"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:backgroundTint="#BA0027FF"
+                   android:textColor="@color/white"
+                   android:text="Continue"
+
+                   />
+
+               <!--            <LinearLayout-->
+               <!--                android:layout_width="match_parent"-->
+               <!--                android:layout_height="wrap_content"-->
+               <!--                android:orientation="horizontal"-->
+               <!--                android:layout_gravity="center"-->
+               <!--                android:layout_marginTop="20dp">-->
+               <!--                <View-->
+               <!--                    android:layout_width="177dp"-->
+               <!--                    android:layout_height="1dp"-->
+               <!--                    android:background="#76000000"-->
+               <!--                    android:layout_weight="1"-->
+               <!--                    android:layout_marginTop="10dp"-->
+               <!--                    android:textColor="@android:color/black"-->
+               <!--                    android:layout_marginLeft="10dp"/>-->
+
+               <!--                <TextView-->
+               <!--                    android:layout_width="wrap_content"-->
+               <!--                    android:layout_height="wrap_content"-->
+               <!--                    android:text="or"-->
+               <!--                    android:layout_marginLeft="10dp"-->
+               <!--                    android:gravity="center"-->
+               <!--                    -->
+               <!--                    android:layout_gravity="center"-->
+               <!--                    android:textColor="@android:color/black"-->
+               <!--                    android:layout_marginRight="10dp"-->
+               <!--                     />-->
+               <!--                <View-->
+               <!--                    android:layout_width="165dp"-->
+               <!--                    android:layout_height="1dp"-->
+               <!--                    android:background="#76000000"-->
+               <!--                    android:layout_weight="1"-->
+               <!--                    android:textColor="@android:color/black"-->
+               <!--                    android:layout_marginTop="10dp"-->
+
+               <!--                    />-->
+               <!--            </LinearLayout>-->
+
+               <TextView
+                   android:layout_width="300dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:text="By continuing you agree to our Terms of service Privacy Policy Content Policy"
+                   android:textAlignment="center"
+
+                   android:textColor="@android:color/black" />
+
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>
